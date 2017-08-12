@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\noptions(stringsAsFactors = FALSE)\n\nlibrary(readr)\nexpenditure <- read_delim(\"./drf_pay_v2.csv\", delim=\",\")\n\n\n\n\n\n\n\n\n\n",
+    "created" : 1502547851661.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "556775859",
+    "id" : "4EBF2C05",
+    "lastKnownWriteTime" : 1502550212,
+    "last_content_update" : 1502550212183,
+    "path" : "~/R_projs/Shiny_App2_test/proj_init.R",
+    "project_path" : "proj_init.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

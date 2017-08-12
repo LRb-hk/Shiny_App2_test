@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\nlibrary(ggplot2)  \n\n\nfluidPage(\n  title = 'Testing',\n  sidebarLayout(\n    sidebarPanel(\n      # selectInput(inputId = \"YR\",\n      #             label = \"Year of Financial Budget:\",\n      #             choices = c(2015, 2016, 2017),\n      #             selected = 2017),\n      conditionalPanel(\n        'input.dataset === \"expenditure\"',\n        helpText(\"Expenditure 支出; in thousands\")\n        #checkboxGroupInput('show_vars', 'Columns in expenditure3 to show:',\n        #                   names(expenditure), selected = names(expenditure))\n      )\n      ,width=1),\n    mainPanel(\n      tabsetPanel(\n        id = 'dataset',\n        tabPanel('expenditure', DT::dataTableOutput('mytable1'))### will be referred by the side panel\n       )\n    )\n  )\n)\n",
+    "created" : 1502547084243.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1177340119",
+    "id" : "F62EE8B0",
+    "lastKnownWriteTime" : 1502548208,
+    "last_content_update" : 1502548208862,
+    "path" : "~/R_projs/Shiny_App2_test/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

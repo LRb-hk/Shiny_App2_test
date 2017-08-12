@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\nlibrary(shiny)\nlibrary(ggplot2)\nlibrary(DT)\n\n# Sys.setlocale(category=\"LC_ALL\", locale=\"cht\")\n\n#commitment <- read.csv(\"commitment.csv\",sep=\"\\t\")\n\n# datatable(expenditure) %>% formatCurrency(10:13, '$', digits = 0) \n\n\nfunction(input, output) {\n  \n  \n  # choose columns to display\n  # diamonds2 = diamonds[sample(nrow(diamonds), 1000), ]\n  output$mytable1 <- DT::renderDataTable({\n    #DT::datatable(expenditure[, input$show_vars, drop = FALSE])\n    #DT::datatable(expenditure3[, input$show_vars, drop = FALSE])\n    DT::datatable(expenditure, filter = 'top',options = list(orderClasses = TRUE, pageLength = 50) ) \n  })\n  \n  \n}\n",
+    "created" : 1502547085604.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "300075269",
+    "id" : "3A85EF28",
+    "lastKnownWriteTime" : 1502548168,
+    "last_content_update" : 1502548168514,
+    "path" : "~/R_projs/Shiny_App2_test/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

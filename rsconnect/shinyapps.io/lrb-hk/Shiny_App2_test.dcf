@@ -1,0 +1,11 @@
+name: Shiny_App2_test
+title: Shiny_App2_test
+account: lrb-hk
+server: shinyapps.io
+appId: 204368
+bundleId: 938471
+url: https://lrb-hk.shinyapps.io/Shiny_App2_test/
+when: 1502548353.12526
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: drf_pay_v2.csv|proj_init.R
